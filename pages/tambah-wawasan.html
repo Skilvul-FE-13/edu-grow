@@ -68,11 +68,11 @@
     <div class="search mt-5 d-flex align-items-center justify-content-center">
       <div class="input-group mb-3 shadow rounded" style="width: 600px; height: 60px;">
         <span class="input-group-append">
-          <button class="btn btn-outline-secondary bg-white border-0" style="height: 60px"type="button">
+          <button class="btn btn-outline-secondary bg-white border-0" style="height: 60px;"type="button">
               <i class="bi bi-search"></i>
           </button>
         </span>
-        <input type="text" class="form-control" placeholder="Cari disini........" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" class="form-control border-white" placeholder="Cari disini........" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append ">
           <button class="btn btn-outline-secondary text-white" style="background-color: #3A5088; height: 60px"type="button">Cari</button>
         </div>
@@ -217,9 +217,9 @@
     
     <h1 class="week-tren mt-4"style="color: #3A5088; font-weight: 600; font-size: 40px; margin-left:150px">Sedang Populer Minggu Ini</h1>
     <!-- Card tren -->
-    <div class="row row-cols-3 row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-l-3  row-cols-xl-3 px-5 mt-2">
+    <div class="row row-cols-3 row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-l-3  row-cols-xl-3 px-5 mt-4">
       <div class="col">
-        <div class="tren card shadow" style="width: 383px; height: 167px;">
+        <div class="tren card shadow" style="width: 383px; height: 180px;">
           <div class="card-body">
             <div class="d-flex gap-3">
               <h1 style="color: #AE965A; font-style: normal; font-weight: 600; font-size: 40px;">01</h1>
@@ -242,7 +242,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="tren card shadow" style="width: 383px; height: 167px;">
+        <div class="tren card shadow" style="width: 383px; height: 180px;">
           <div class="card-body">
             <div class="d-flex gap-3">
               <h1 style="color: #AE965A; font-style: normal; font-weight: 600; font-size: 40px;">02</h1>
@@ -265,7 +265,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="tren card shadow" style="width: 383px; height: 167px;">
+        <div class="tren card shadow" style="width: 383px; height: 180px;">
           <div class="card-body">
             <div class="d-flex gap-3">
               <h1 style="color: #AE965A; font-style: normal; font-weight: 600; font-size: 40px;">03</h1>
@@ -291,10 +291,72 @@
     </div>
     <!-- End -->
     <!-- Event Section -->
-    <div class="event-section mt-5" style="height: 610px; background-color: #002766;">
-
+    <div class="event-section mt-5 d-flex align-items-center justify-content-between gap-5" style="height: 610px; background-color: #002766;">
+      <img src="/public/images/event-picture.png" style="margin-left: -50px;"alt="Bootstrap" />
+      <div class="event-title">
+        <h1 class="text-white text-center" style="font-weight:800; font-size: 60px;"><span style="color: #7FB5E6;">Event</span> EduGrow</h1>
+        <p class="text-center text-white">Ayo ikuti beragam event dengan pembahasan  menarik dan tentunya seru dari berbagai universitas di Indonesia </p>
+      </div>   
     </div>
-    <!-- End -->
+     <!-- End -->
+    <!-- Benefit -->
+    <div class="container d-flex gap-3 justify-content-center" style="margin-top: -25px;">
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/univ.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Event dari seluruh Universitas Indonesia</p>
+        </div>
+      </div>
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/topik.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Topik pembahasan yang menarik</p>
+        </div>
+      </div>
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/relasi.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Menambah relasi</p>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex gap-3 justify-content-center mt-2" style="margin-top: -25px;">
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/skill.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Menambah Skill dan Pengalaman</p>
+        </div>
+      </div>
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/chat.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Dapat berinteraksi langsung dengan narasumber</p>
+        </div>
+      </div>
+    </div>
+  <!-- End -->
+
+  <h1 class="cat-title mt-5 text-center"style="font-weight: 600; font-size: 24px;">Pilih Kategori</h1>
+
+  <!-- List Kategori -->
+  <div class="container d-flex align-items-center justify-content-center gap-3 mt-3">
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Seminar</p>
+    </div>
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Lomba</p>
+    </div>
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Volunter</p>
+    </div>
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Expo</p>
+    </div>
+
+  </div>
+  <!-- End -->
+
+   
 
 
     <!-- Footer -->
