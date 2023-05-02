@@ -34,6 +34,30 @@ body {
   gap: 64px;
 }
 
+.footer {
+  color: #3a5088;
+}
+
+.footer-content {
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.btn-flag img {
+  height: 20px;
+  margin: 10px;
+}
+
+.btn-flag .active {
+  background: #ffffff !important;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
 @media (max-width: 768px) {
   .image-client {
     flex-direction: column;
