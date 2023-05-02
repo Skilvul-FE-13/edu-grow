@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-nav {
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 .btn-primary {
@@ -58,8 +58,41 @@ body {
   gap: 24px;
 }
 
+.highlight {
+  color: #3a5088;
+  font-weight: 900;
+}
+
+.circle-jumbo {
+  margin-top: -400px;
+  z-index: -1;
+}
+
+.btn-jumbo {
+  margin-left: 0px;
+}
+
+.jumbotron {
+  z-index: 1;
+}
+
 @media (max-width: 768px) {
   .image-client {
     flex-direction: column;
+  }
+
+  .social {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar {
+    padding: 16px 0px;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
   }
 }
