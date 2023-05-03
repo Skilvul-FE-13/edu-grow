@@ -20,3 +20,34 @@ font-size: 24px;
 font-weight: 400;
 font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .tren-card{
+    margin-left: 50px;
+    gap: 30px;
+  }
+  .event-section {
+    flex-direction: column;
+    height: 800px
+  }
+  .event-pic{
+    margin-top: 50px;
+  }
+  .event-content{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+}
+
+@media (max-width: 576px){
+  .event-section {
+    flex-direction: column;
+    height: 800px
+  }
+  .tren-card{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+  }
+}
