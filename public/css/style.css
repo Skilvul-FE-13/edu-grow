@@ -76,6 +76,12 @@ body {
   z-index: 1;
 }
 
+.home-card {
+  display: block;
+  position: relative;
+  justify-content: center !important;
+}
+
 @media (max-width: 768px) {
   .image-client {
     flex-direction: column;
