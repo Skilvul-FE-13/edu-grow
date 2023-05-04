@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD WAJIB -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,33 +11,116 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/style-maya.css" />
+
   </head>
+  <!-- END HEAD -->
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/public/images/logo.png" alt="Bootstrap" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/pages/tambah-wawasan.html"
+                >Tambah Wawasan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about.html">About</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="d-grid gap-2 d-md-flex justify-content-md-end d-sm-none d-md-block"
+        >
+          <button type="button" class="btn btn-primary">Masuk</button>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
     <!-- search -->
-    <div class="search mt-3">
-      <div class="input-group mb-3 shadow">
+    <div class="search mt-5 d-flex align-items-center justify-content-center">
+      <div class="input-group mb-3 shadow rounded" style="width: 600px; height: 60px;">
         <span class="input-group-append">
-          <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5" type="button">
-              <i class="fa fa-search"></i>
+          <button class="btn btn-outline-secondary bg-white border-0" style="height: 60px;"type="button">
+              <i class="bi bi-search"></i>
           </button>
         </span>
-        <input type="text" class="form-control" placeholder="Cari disini........" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" class="form-control border-white" placeholder="Cari disini........" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append ">
-          <button class="btn btn-outline-secondary" type="button">Cari</button>
+          <button class="btn btn-outline-secondary text-white" style="background-color: #3A5088; height: 60px"type="button">Cari</button>
         </div>
       </div>
     </div>
     <!-- End search -->
 
     <!-- title -->
-    <div class="title mt-5 text-center">
-      <h1 class="font-weight-bold" style="color: #3A5088">RuangBaca EduGrow</h1>
-      <p class="font-weight-light">Temukan dan akses berbagai artikel secara gratis  dan tambah wawasanmu    </p>
+    <div class="mt-5 text-center">
+      <h1 class="title font-weight-bold" style="color: #3A5088">RuangBaca EduGrow</h1>
+      <p class="sub-title font-weight-light text-secondary">Temukan dan akses berbagai artikel secara gratis  dan tambah wawasanmu    </p>
     </div>
     <!-- End title -->
 
     <!-- Card Articles -->
-    <div class="row row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 m-5 g-4">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 m-5 g-4">
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card shadow">
+          <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 40px;" alt="Avatar" />
+            <p class="avatar-name mt-2 text-secondary">Steve Lohr, Steve, Lohr</p>
+            <p class="article-date mt-2 text-secondary">29 Sep 2012</p>
+            <p class="rounded-4 py-2 px-4 text-white mt-2" style="background-color: #AE965A;">Teknologi</p>
+          </div>
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top mt-2 px-4"
+            alt="Hollywood Sign on The Hill" />
+            <!-- Card Body -->
+          <div class="card-body px-4">
+            <h5 class="card-title">Microsoft Faces 'Year of Reckoning' in Windows Phone Software, Says IDC</h5>
+            <p class="card-text text-secondary">
+              LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
+          </div>
+          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
+            <i class="bi bi-eye mt-2"></i>
+            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
+            <i class="bi bi-share mt-2 ms-2"></i>
+            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
+          </div>
+          <!-- Baca Selengkapnya -->
+          <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
+            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Card 2 -->
       <div class="col">
         <div class="card shadow">
           <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
@@ -52,15 +136,21 @@
             <p class="card-text text-secondary">
               LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
           </div>
-          <div class="read-share px-4 d-flex gap-3" style="font-size:small;">
-            <p class="avatar-name mt-2 text-secondary">Dibaca</p>
-            <p class="article-date mt-2 text-secondary">Dibagikan</p>  
+          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
+            <i class="bi bi-eye mt-2"></i>
+            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
+            <i class="bi bi-share mt-2 ms-2"></i>
+            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
           </div>
-          <div class="btn-selengkanya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white" style="background-color: #3A5088; width: 170px; height: 42px;">Baca Selengkapnya</a>
+          <!-- Baca selengkapnya -->
+          <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
+            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
           </div>
         </div>
       </div>
+      <!-- End -->
+
+      <!-- Card 3 -->
       <div class="col">
         <div class="card shadow">
           <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
@@ -76,15 +166,21 @@
             <p class="card-text text-secondary">
               LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
           </div>
-          <div class="read-share px-4 d-flex gap-3" style="font-size:small;">
-            <p class="avatar-name mt-2 text-secondary">Dibaca</p>
-            <p class="article-date mt-2 text-secondary">Dibagikan</p>  
+          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
+            <i class="bi bi-eye mt-2"></i>
+            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
+            <i class="bi bi-share mt-2 ms-2"></i>
+            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
           </div>
-          <div class="btn-selengkanya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white" style="background-color: #3A5088; width: 170px; height: 42px;">Baca Selengkapnya</a>
+          <!-- Baca selengkapnya -->
+          <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
+            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
           </div>
         </div>
       </div>
+      <!-- End -->
+
+      <!-- Card 4 -->
       <div class="col">
         <div class="card shadow">
           <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
@@ -100,40 +196,362 @@
             <p class="card-text text-secondary">
               LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
           </div>
-          <div class="read-share px-4 d-flex gap-3" style="font-size:small;">
-            <p class="avatar-name mt-2 text-secondary">Dibaca</p>
-            <p class="article-date mt-2 text-secondary">Dibagikan</p>  
+          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
+            <i class="bi bi-eye mt-2"></i>
+            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
+            <i class="bi bi-share mt-2 ms-2"></i>
+            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
           </div>
-          <div class="btn-selengkanya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white" style="background-color: #3A5088; width: 170px; height: 42px;">Baca Selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow">
-          <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
-            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 40px;" alt="Avatar" />
-            <p class="avatar-name mt-2 text-secondary">Steve Lohr, Steve, Lohr</p>
-            <p class="article-date mt-2 text-secondary">29 Sep 2012</p>
-            <p class="rounded-4 py-2 px-4 text-white mt-2" style="background-color: #AE965A;">Teknologi</p>
-          </div>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top mt-2 px-4"
-            alt="Hollywood Sign on The Hill" />
-          <div class="card-body px-4">
-            <h5 class="card-title">Microsoft Faces 'Year of Reckoning' in Windows Phone Software, Says IDC</h5>
-            <p class="card-text text-secondary">
-              LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
-          </div>
-          <div class="read-share px-4 d-flex gap-3" style="font-size:small;">
-            <p class="avatar-name mt-2 text-secondary">Dibaca</p>
-            <p class="article-date mt-2 text-secondary">Dibagikan</p>  
-          </div>
-          <div class="btn-selengkanya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white" style="background-color: #3A5088; width: 170px; height: 42px;">Baca Selengkapnya</a>
+           <!-- Baca selengkapnya -->
+           <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
+            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
           </div>
         </div>
       </div>
+      <!-- End -->
+    </div>
     <!-- End Card Articles -->
+    <div class="line px-5">
+      <hr class="w-100">
+    </div>
+    
+    <h1 class="week-tren mt-4"style="color: #3A5088; font-weight: 600; font-size: 40px; margin-left:150px">Sedang Populer Minggu Ini</h1>
+    <!-- Card tren -->
+    <div class="tren-card row row-cols-3 row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-l-3  row-cols-xl-3 px-5 mt-4">
+      <div class="col">
+        <div class="tren card shadow" style="width: 383px; height: 180px;">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <h1 style="color: #AE965A; font-style: normal; font-weight: 600; font-size: 40px;">01</h1>
+              <div class="main-article">
+                <div class="profile-card d-flex gap-2 mt-2" style="font-size:small;">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 44px; height: 39px;" alt="Avatar" />
+                  <p class="avatar-name mt-2" style="font-weight: 600; font-size: 14px;">Steve Lohr, Steve, Lohr</p>
+                </div>
+                <h5 class="tren-title card-title">Bullying di Lingkungan Sekolah</h5>
+                <div class="date-read d-flex gap-2" style="font-size:small;">
+                  <i class="bi bi-dot mt-2"></i>
+                  <p class="date mt-2 text-secondary">6 Maret 2022</p>  
+                  <i class="bi bi-dot mt-2 ms-2 "></i>
+                  <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="tren card shadow" style="width: 383px; height: 180px;">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <h1 style="color: #AE965A; font-style: normal; font-weight: 600; font-size: 40px;">02</h1>
+              <div class="main-article">
+                <div class="profile-card d-flex gap-2 mt-2" style="font-size:small;">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 44px; height: 39px;" alt="Avatar" />
+                  <p class="avatar-name mt-2" style="font-weight: 600; font-size: 14px;">Steve Lohr, Steve, Lohr</p>
+                </div>
+                <h5 class="tren-title card-title">Bullying di Lingkungan Sekolah</h5>
+                <div class="date-read d-flex gap-2" style="font-size:small;">
+                  <i class="bi bi-dot mt-2"></i>
+                  <p class="date mt-2 text-secondary">6 Maret 2022</p>  
+                  <i class="bi bi-dot mt-2 ms-2 "></i>
+                  <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="tren card shadow" style="width: 383px; height: 180px;">
+          <div class="card-body">
+            <div class="d-flex gap-3">
+              <h1 style="color: #AE965A; font-style: normal; font-weight: 600; font-size: 40px;">03</h1>
+              <div class="main-article">
+                <div class="profile-card d-flex gap-2 mt-2" style="font-size:small;">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 44px; height: 39px;" alt="Avatar" />
+                  <p class="avatar-name mt-2" style="font-weight: 600; font-size: 14px;">Steve Lohr, Steve, Lohr</p>
+                </div>
+                <h5 class="tren-title card-title">Bullying di Lingkungan Sekolah</h5>
+                <div class="date-read d-flex gap-2" style="font-size:small;">
+                  <i class="bi bi-dot mt-2"></i>
+                  <p class="date mt-2 text-secondary">6 Maret 2022</p>  
+                  <i class="bi bi-dot mt-2 ms-2 "></i>
+                  <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- End -->
+    <!-- Event Section -->
+    <div class="event-section mt-5 d-flex align-items-center justify-content-between gap-5" style="height: 610px; background-color: #002766;">
+      <img class="event-pic" src="/public/images/event-picture.png" style="margin-left: -50px;"alt="Bootstrap" />
+      <div class="event-title">
+        <h1 class="text-white text-center" style="font-weight:800; font-size: 60px;"><span style="color: #7FB5E6;">Event</span> EduGrow</h1>
+        <p class="text-center text-white">Ayo ikuti beragam event dengan pembahasan  menarik dan tentunya seru dari berbagai universitas di Indonesia </p>
+      </div>   
+    </div>
+     <!-- End -->
+    <!-- Benefit -->
+    <div class="container d-flex gap-3 justify-content-center" style="margin-top: -25px;">
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/univ.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Event dari seluruh Universitas Indonesia</p>
+        </div>
+      </div>
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/topik.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Topik pembahasan yang menarik</p>
+        </div>
+      </div>
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/relasi.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Menambah relasi</p>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex gap-3 justify-content-center mt-2" style="margin-top: -25px;">
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/skill.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Menambah Skill dan Pengalaman</p>
+        </div>
+      </div>
+      <div class="card shadow rounded-3" style="width: 367px; height: 118px;">
+        <div class="d-flex gap-4 align-items-center justify-content-center p-3">
+          <img src="/public/images/chat.png" style="width: 82px; height: 76px;"alt="Bootstrap" />
+          <p class="mt-2">Dapat berinteraksi langsung dengan narasumber</p>
+        </div>
+      </div>
+    </div>
+  <!-- End -->
+
+  <h1 class="cat-title mt-5 text-center"style="font-weight: 600; font-size: 24px;">Pilih Kategori</h1>
+
+  <!-- List Kategori -->
+  <div class="container d-flex align-items-center justify-content-center gap-3 mt-3">
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Seminar</p>
+    </div>
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Lomba</p>
+    </div>
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Volunter</p>
+    </div>
+    <div class="card rounded-3" style="width: 118px; height: 40px; background-color: #3A5088;">
+      <p class="text-white px-4 py-2">Expo</p>
+    </div>
+
+  </div>
+  <!-- End -->
+
+  <!-- Event List -->
+  <div class="row row-cols-1 my-4 gap-3">
+    <div class="col">
+      <div class="card shadow rounded-0 m-auto" style="width: 1190px; height: 279px;">
+        <div class="event-content row row-cols-2 my-auto" style="gap: 100px; margin-left: 50px">
+          <!-- Content -->
+          <div class="event-desc">
+            <div class="profile-univ d-flex align-items-center gap-2" style="font-size:small;">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="univ-profile rounded-circle" style="width: 40px;" alt="Univ" />
+              <p class="univ-name article-date mt-4 text-secondary">Universitas Indonesia</p>
+            </div>
+            <h5 class="card-title px-4">Webinar Bersama Kita Cegah Bullying</h5>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-calendar-week"></i>
+              <p class="event-date text-secondary">6 Maret 2022</p>
+            </div>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-clock"></i>
+              <p class="event-time text-secondary">08.00 - Selesai</p>
+            </div>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-geo-alt"></i>
+              <p class="event-location text-secondary">Zoom Meeting</p>
+            </div>
+          </div>
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="event-pic" style="width: 364px; height: 229px;"alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow rounded-0 m-auto" style="width: 1190px; height: 279px;">
+        <div class="event-content row row-cols-2 my-auto" style="gap: 100px; margin-left: 50px">
+          <!-- Content -->
+          <div class="event-desc">
+            <div class="profile-univ d-flex align-items-center gap-2" style="font-size:small;">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="univ-profile rounded-circle" style="width: 40px;" alt="Univ" />
+              <p class="univ-name article-date mt-4 text-secondary">Universitas Indonesia</p>
+            </div>
+            <h5 class="card-title px-4">Webinar Bersama Kita Cegah Bullying</h5>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-calendar-week"></i>
+              <p class="event-date text-secondary">6 Maret 2022</p>
+            </div>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-clock"></i>
+              <p class="event-time text-secondary">08.00 - Selesai</p>
+            </div>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-geo-alt"></i>
+              <p class="event-location text-secondary">Zoom Meeting</p>
+            </div>
+          </div>
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="event-pic" style="width: 364px; height: 229px;"alt="">
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card shadow rounded-0 m-auto" style="width: 1190px; height: 279px;">
+        <div class="event-content row row-cols-2 my-auto" style="gap: 100px; margin-left: 50px">
+          <!-- Content -->
+          <div class="event-desc">
+            <div class="profile-univ d-flex align-items-center gap-2" style="font-size:small;">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="univ-profile rounded-circle" style="width: 40px;" alt="Univ" />
+              <p class="univ-name article-date mt-4 text-secondary">Universitas Indonesia</p>
+            </div>
+            <h5 class="card-title px-4">Webinar Bersama Kita Cegah Bullying</h5>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-calendar-week"></i>
+              <p class="event-date text-secondary">6 Maret 2022</p>
+            </div>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-clock"></i>
+              <p class="event-time text-secondary">08.00 - Selesai</p>
+            </div>
+            <div class="d-flex gap-2 ms-4">
+              <i class="bi bi-geo-alt"></i>
+              <p class="event-location text-secondary">Zoom Meeting</p>
+            </div>
+          </div>
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="event-pic" style="width: 364px; height: 229px;"alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- End -->
+
+   
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="our-client p-5 border-bottom">
+        <div class="container">
+          <div class="image-client">
+            <img alt="" src="/public/images/payment/Alfamart.png" />
+            <img alt="" src="/public/images/payment/BCA.png" />
+            <img alt="" src="/public/images/payment/Google.png" />
+            <img alt="" src="/public/images/payment/Kudo.png" />
+            <img alt="" src="/public/images/payment/Mandiri.png" />
+            <img alt="" src="/public/images/payment/100comp.png" />
+          </div>
+        </div>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="footer">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+              <!-- Content -->
+              <a class="navbar-brand mb-4" href="#">
+                <img src="/public/images/logo.png" alt="Bootstrap" />
+              </a>
+              <p class="mt-5">
+                EduGrow Adalah platform edukasi berbasi website dengan tujuan
+                untuk meningkatkan kualitas pendidikan anak-anak penerus bangsa
+                Indonesia.
+              </p>
+              <p class="bi bi-geo-alt-fill">
+                Jl. Gajah Duduk No.25/26, RT.47/RW.1, Raden Saleh, Kec. Menteng,
+                Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10367
+              </p>
+              <p class="bi bi-telephone-fill">0851-5555-7589</p>
+              <p class="bi bi-envelope-fill">customer@edugrow.com</p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="footer-content col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="fw-bold mb-4">Fitur</h6>
+              <p>
+                <a href="#!" class="text-reset">Growth Program</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Tambah Wawasan</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Bantuan</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="fw-bold mb-4">Bahasa</h6>
+              <p>
+                <button
+                  href="#!"
+                  class="text-reset btn btn-light btn-flag active"
+                >
+                  <img src="public/images/indonesia-flag-icon.svg" />Indonesia
+                </button>
+              </p>
+              <p>
+                <button href="#!" class="text-reset btn btn-light btn-flag">
+                  <img
+                    src="public/images/united-kingdom-flag-icon.svg"
+                  />English
+                </button>
+              </p>
+
+              <h6 class="fw-bold mb-4">Ikuti Kami</h6>
+              <div class="social">
+                <a href="#!" class="text-reset"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#!" class="text-reset"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="#!" class="text-reset"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Grid row -->
+          <!-- Copyright -->
+          <div class="text-left p-4" style="background-color: #fafafb">
+            © 2022 by EduGrow. All rights reserved
+          </div>
+          <!-- Copyright -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    </footer>
+    <!-- END -->
+    <!-- End -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
