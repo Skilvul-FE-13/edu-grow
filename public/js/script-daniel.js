@@ -17,7 +17,6 @@ async function renderArtikel() {
   const currentPath = window.location.pathname;
   //const artikel = data.find((artikel) => artikel.id == session);
   const artikel = data[session];
-  const date = new Date(artikel.tanggal);
 
   document.getElementById("artikel").innerHTML = "";
   document.getElementById("artikel").innerHTML += `
@@ -26,7 +25,7 @@ async function renderArtikel() {
             <div class="row row-cols-auto" style="display: flex; align-items: center; margin: 20px 0px 0px 40px">
               <div class="col"><img src="${artikel.avatar}" class="rounded-circle" /></div>
               <div class="col">${artikel.name}</div>
-              <div class="col">${date}</div>
+              <div class="col">${artikel.tanggal}</div>
               <div class="col" style="background-color: #ae965a; border-radius: 75px; color: #fafafb; padding: 6px">${artikel.kategori}</div>
             </div>
           </div>
