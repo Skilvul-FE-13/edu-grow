@@ -33,7 +33,7 @@ async function getData() {
                   </div>
                   <!-- Baca Selengkapnya -->
                   <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
-                    <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
+                    <a href="artikel.html" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@ async function liveSearch() {
                   </div>
                   <!-- Baca Selengkapnya -->
                   <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
-                    <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
+                    <a href="artikel.html" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
                   </div>
                 </div>
               </div>
