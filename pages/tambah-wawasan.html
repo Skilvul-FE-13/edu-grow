@@ -72,9 +72,9 @@
               <i class="bi bi-search"></i>
           </button>
         </span>
-        <input type="text" class="form-control border-white" placeholder="Cari disini........" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="search" id="searchbox" class="form-control border-white" placeholder="Cari disini........" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <div class="input-group-append ">
-          <button class="btn btn-outline-secondary text-white" style="background-color: #3A5088; height: 60px"type="button">Cari</button>
+          <button class="btn btn-outline-secondary text-white" style="background-color: #3A5088; height: 60px"type="button" onclick="liveSearch()">Cari</button>
         </div>
       </div>
     </div>
@@ -88,127 +88,7 @@
     <!-- End title -->
 
     <!-- Card Articles -->
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 m-5 g-4">
-      <!-- Card 1 -->
-      <div class="col">
-        <div class="card shadow">
-          <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
-            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 40px;" alt="Avatar" />
-            <p class="avatar-name mt-2 text-secondary">Steve Lohr, Steve, Lohr</p>
-            <p class="article-date mt-2 text-secondary">29 Sep 2012</p>
-            <p class="rounded-4 py-2 px-4 text-white mt-2" style="background-color: #AE965A;">Teknologi</p>
-          </div>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top mt-2 px-4"
-            alt="Hollywood Sign on The Hill" />
-            <!-- Card Body -->
-          <div class="card-body px-4">
-            <h5 class="card-title">Microsoft Faces 'Year of Reckoning' in Windows Phone Software, Says IDC</h5>
-            <p class="card-text text-secondary">
-              LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
-          </div>
-          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
-            <i class="bi bi-eye mt-2"></i>
-            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
-            <i class="bi bi-share mt-2 ms-2"></i>
-            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
-          </div>
-          <!-- Baca Selengkapnya -->
-          <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Card 2 -->
-      <div class="col">
-        <div class="card shadow">
-          <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
-            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 40px;" alt="Avatar" />
-            <p class="avatar-name mt-2 text-secondary">Steve Lohr, Steve, Lohr</p>
-            <p class="article-date mt-2 text-secondary">29 Sep 2012</p>
-            <p class="rounded-4 py-2 px-4 text-white mt-2" style="background-color: #AE965A;">Teknologi</p>
-          </div>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top mt-2 px-4"
-            alt="Hollywood Sign on The Hill" />
-          <div class="card-body px-4">
-            <h5 class="card-title">Microsoft Faces 'Year of Reckoning' in Windows Phone Software, Says IDC</h5>
-            <p class="card-text text-secondary">
-              LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
-          </div>
-          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
-            <i class="bi bi-eye mt-2"></i>
-            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
-            <i class="bi bi-share mt-2 ms-2"></i>
-            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
-          </div>
-          <!-- Baca selengkapnya -->
-          <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Card 3 -->
-      <div class="col">
-        <div class="card shadow">
-          <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
-            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 40px;" alt="Avatar" />
-            <p class="avatar-name mt-2 text-secondary">Steve Lohr, Steve, Lohr</p>
-            <p class="article-date mt-2 text-secondary">29 Sep 2012</p>
-            <p class="rounded-4 py-2 px-4 text-white mt-2" style="background-color: #AE965A;">Teknologi</p>
-          </div>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top mt-2 px-4"
-            alt="Hollywood Sign on The Hill" />
-          <div class="card-body px-4">
-            <h5 class="card-title">Microsoft Faces 'Year of Reckoning' in Windows Phone Software, Says IDC</h5>
-            <p class="card-text text-secondary">
-              LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
-          </div>
-          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
-            <i class="bi bi-eye mt-2"></i>
-            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
-            <i class="bi bi-share mt-2 ms-2"></i>
-            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
-          </div>
-          <!-- Baca selengkapnya -->
-          <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Card 4 -->
-      <div class="col">
-        <div class="card shadow">
-          <div class="profile-card d-flex align-items-center gap-2 mt-3 px-4" style="font-size:small;">
-            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 40px;" alt="Avatar" />
-            <p class="avatar-name mt-2 text-secondary">Steve Lohr, Steve, Lohr</p>
-            <p class="article-date mt-2 text-secondary">29 Sep 2012</p>
-            <p class="rounded-4 py-2 px-4 text-white mt-2" style="background-color: #AE965A;">Teknologi</p>
-          </div>
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top mt-2 px-4"
-            alt="Hollywood Sign on The Hill" />
-          <div class="card-body px-4">
-            <h5 class="card-title">Microsoft Faces 'Year of Reckoning' in Windows Phone Software, Says IDC</h5>
-            <p class="card-text text-secondary">
-              LyrArc Article Gist 2013 will be a crucial year for Windows mobile software, according to IDC. IDC analysts say developer support is critical and mobile platforms that fall below 50% in support from developers 'very interested' in developing apps for them are likely to see a gradual demise.            </p>
-          </div>
-          <div class="read-share px-4 d-flex gap-2" style="font-size:small;">
-            <i class="bi bi-eye mt-2"></i>
-            <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
-            <i class="bi bi-share mt-2 ms-2"></i>
-            <p class="dibagikan mt-2 text-secondary">Dibagikan <span>12</span></p>  
-          </div>
-           <!-- Baca selengkapnya -->
-           <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
-            <a href="#" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 m-5 g-4" id="card-container">
     </div>
     <!-- End Card Articles -->
     <div class="line px-5">
@@ -231,7 +111,7 @@
                 <h5 class="tren-title card-title">Bullying di Lingkungan Sekolah</h5>
                 <div class="date-read d-flex gap-2" style="font-size:small;">
                   <i class="bi bi-dot mt-2"></i>
-                  <p class="date mt-2 text-secondary">6 Maret 2022</p>  
+                  <p class="article-date mt-2 text-secondary">6 Maret 2022</p>  
                   <i class="bi bi-dot mt-2 ms-2 "></i>
                   <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
                 </div>
@@ -254,7 +134,7 @@
                 <h5 class="tren-title card-title">Bullying di Lingkungan Sekolah</h5>
                 <div class="date-read d-flex gap-2" style="font-size:small;">
                   <i class="bi bi-dot mt-2"></i>
-                  <p class="date mt-2 text-secondary">6 Maret 2022</p>  
+                  <p class="article-date mt-2 text-secondary">6 Maret 2022</p>  
                   <i class="bi bi-dot mt-2 ms-2 "></i>
                   <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
                 </div>
@@ -277,7 +157,7 @@
                 <h5 class="tren-title card-title">Bullying di Lingkungan Sekolah</h5>
                 <div class="date-read d-flex gap-2" style="font-size:small;">
                   <i class="bi bi-dot mt-2"></i>
-                  <p class="date mt-2 text-secondary">6 Maret 2022</p>  
+                  <p class="article-date mt-2 text-secondary">6 Maret 2022</p>  
                   <i class="bi bi-dot mt-2 ms-2 "></i>
                   <p class="dibaca mt-2 text-secondary">Dibaca <span>50</span></p>
                 </div>
@@ -365,7 +245,7 @@
           <div class="event-desc">
             <div class="profile-univ d-flex align-items-center gap-2" style="font-size:small;">
               <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="univ-profile rounded-circle" style="width: 40px;" alt="Univ" />
-              <p class="univ-name article-date mt-4 text-secondary">Universitas Indonesia</p>
+              <p class="univ-name univ-name mt-4 text-secondary">Universitas Indonesia</p>
             </div>
             <h5 class="card-title px-4">Webinar Bersama Kita Cegah Bullying</h5>
             <div class="d-flex gap-2 ms-4">
@@ -393,7 +273,7 @@
           <div class="event-desc">
             <div class="profile-univ d-flex align-items-center gap-2" style="font-size:small;">
               <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="univ-profile rounded-circle" style="width: 40px;" alt="Univ" />
-              <p class="univ-name article-date mt-4 text-secondary">Universitas Indonesia</p>
+              <p class="univ-name  mt-4 text-secondary">Universitas Indonesia</p>
             </div>
             <h5 class="card-title px-4">Webinar Bersama Kita Cegah Bullying</h5>
             <div class="d-flex gap-2 ms-4">
@@ -421,7 +301,7 @@
           <div class="event-desc">
             <div class="profile-univ d-flex align-items-center gap-2" style="font-size:small;">
               <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="univ-profile rounded-circle" style="width: 40px;" alt="Univ" />
-              <p class="univ-name article-date mt-4 text-secondary">Universitas Indonesia</p>
+              <p class="univ-name  mt-4 text-secondary">Universitas Indonesia</p>
             </div>
             <h5 class="card-title px-4">Webinar Bersama Kita Cegah Bullying</h5>
             <div class="d-flex gap-2 ms-4">
@@ -560,5 +440,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="/public/js/script-maya.js"></script>
   </body>
 </html>
