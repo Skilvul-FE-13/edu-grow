@@ -61,8 +61,8 @@ async function liveSearch() {
 
     if (!filterData){
       document.getElementById('card-container').innerHTML +=
-      `<img src="/public/images/data not found.png" class="align-item-center" alt="Bootstrap" />`
-}
+      `<img src="/public/images/data-not-found.png" class="align-item-center" alt="Bootstrap" />`
+    }
     
     console.log(filterData, 'filterData')
     filterData.map((e) => {
