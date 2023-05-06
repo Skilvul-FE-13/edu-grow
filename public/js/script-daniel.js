@@ -2,7 +2,9 @@
 
 async function getArtikel() {
   try {
-    const res = await fetch("/public/databases/artikel.json");
+    const res = await fetch(
+      "https://6454e087f803f3457633b3ec.mockapi.io/artikel"
+    );
     const data = await res.json();
     return data;
   } catch (error) {
@@ -24,7 +26,7 @@ async function renderArtikel() {
           <div class="container text-center">
             <div class="row row-cols-auto" style="display: flex; align-items: center; margin: 20px 0px 0px 40px">
               <div class="col"><img src="${artikel.avatar}" class="rounded-circle" /></div>
-              <div class="col">${artikel.author}</div>
+              <div class="col">${artikel.name}</div>
               <div class="col">${artikel.tanggal}</div>
               <div class="col" style="background-color: #ae965a; border-radius: 75px; color: #fafafb; padding: 6px">${artikel.kategori}</div>
             </div>
