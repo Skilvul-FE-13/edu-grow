@@ -1,0 +1,17 @@
+.card-tim {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-tim:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.clr-txt-primary {
+  color: #3a5088;
+}
+
+.clr-txt-second {
+  color: #222222;
+}
