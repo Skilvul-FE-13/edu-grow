@@ -1,0 +1,14 @@
+.card-tim {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-tim:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
