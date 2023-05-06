@@ -1,5 +1,5 @@
 .title{
-  font-style: normal;
+font-style: normal;
 font-weight: 700;
 font-size: 60px;
 }
@@ -37,11 +37,19 @@ font-size: 14px;
 @media (max-width: 576px){
   .event-section {
     flex-direction: column;
-    height: 800px
   }
   .tren-card{
     display: grid;
     grid-template-columns: auto;
     gap: 30px;
+  }
+
+  .benefit{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tren-card{
+    align-item: center;
   }
 }

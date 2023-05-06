@@ -33,7 +33,7 @@ async function getData() {
                   </div>
                   <!-- Baca Selengkapnya -->
                   <div class="btn-selengkapnya px-4 mt-0 mb-4 d-flex justify-content-end">
-                    <a href="artikel.html" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
+                    <a href="${e.button}" class="btn text-white align-items-center pt-2" style="background-color: #3A5088; width: 170px; height: 42px; font-size: 14px; font-weight:500; ">Baca Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -59,6 +59,11 @@ async function liveSearch() {
     const data = await getData();
     const filterData = data.articles.filter((item) => item.title.toLowerCase().includes(search_query.toLowerCase()) || item.author.toLowerCase().includes(search_query.toLowerCase()))
 
+    if (!filterData){
+      document.getElementById('card-container').innerHTML +=
+      `<img src="/public/images/data not found.png" class="align-item-center" alt="Bootstrap" />`
+}
+    
     console.log(filterData, 'filterData')
     filterData.map((e) => {
         document.getElementById('card-container').innerHTML = ''
