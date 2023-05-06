@@ -25,31 +25,55 @@ font-size: 14px;
   font-size: 20px;
 }
 
+.not-found{
+  margin: 25px 250px;
+}
+
 
 @media (max-width: 768px) {
   .tren-card{
     margin-left: 50px;
     gap: 30px;
   }
+  .not-found{
+    margin: 25px 50px;
+  }
 
 }
 
 @media (max-width: 576px){
+  .week-tren{
+    margin-left: -60px;
+  }
   .event-section {
+    display: flex;
     flex-direction: column;
+    gap: 0'
+  }
+  .event-title{
+    margin-top: 0;
+  }
+  .title-event{
+    margin-top: -50px;
   }
   .tren-card{
     display: grid;
     grid-template-columns: auto;
     gap: 30px;
+    margin-left:-55px;
+    widht: 250px;
   }
 
   .benefit{
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
   }
 
   .tren-card{
     align-item: center;
+  }
+  .event-name{
+   text-align:left;
   }
 }

@@ -16,7 +16,7 @@ async function getData() {
                     <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="avatar rounded-circle" style="width: 40px;" alt="Avatar" />
                     <p class="avatar-name mt-2 text-secondary">${e.author}</p>
                     <p class="article-date mt-2 text-secondary">${e.date}</p>
-                    <p class="rounded-4 py-2 px-4 text-white mt-2" style="background-color: #AE965A;">${e.category}</p>
+                    <p class="rounded-4 py-2 px-4 text-white mt-2 d-none d-lg-block d-xl-block" style="background-color: #AE965A;">${e.category}</p>
                   </div>
                   <img src="${e.content[0].images}" class="card-img-top mt-2 px-4 article-img"
                     alt="Hollywood Sign on The Hill" />
@@ -58,11 +58,11 @@ async function liveSearch() {
     let search_query = document.getElementById("searchbox").value;
     const data = await getData();
     const filterData = data.articles.filter((item) => item.title.toLowerCase().includes(search_query.toLowerCase()) || item.author.toLowerCase().includes(search_query.toLowerCase()))
-
-    if (!filterData){
-      document.getElementById('card-container').innerHTML +=
-      `<img src="/public/images/data not found.png" class="align-item-center" alt="Bootstrap" />`
-}
+    console.log(filterData)
+    if (!filterData.lenght){
+      document.getElementById('card-container').innerHTML =
+      `<img src="/public/images/data-not-found.png" class="not-found";"alt="Bootstrap" />`
+    }
     
     console.log(filterData, 'filterData')
     filterData.map((e) => {
