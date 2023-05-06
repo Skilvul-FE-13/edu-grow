@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  padding: 16px 150px;
+  background: #fafafb;
+  box-shadow: 0px 4px 30px rgba(221, 221, 233, 0.45);
+}
+
+.navbar-nav {
+  margin-left: 25%;
+}
+
+.btn-primary {
+  background: #3a5088;
+  border-color: #3a5088;
+  border-radius: 10px;
+  padding: 12px 25px;
+  margin-left: 20%;
+}
+
+.our-client {
+  background: #c8d4e4;
+}
+
+.image-client {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.footer {
+  color: #3a5088;
+}
+
+.footer-content {
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.btn-flag img {
+  height: 20px;
+  margin: 10px;
+}
+
+.btn-flag .active {
+  background: #ffffff !important;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.highlight {
+  color: #3a5088;
+  font-weight: 900;
+}
+
+.circle-jumbo {
+  margin-top: -400px;
+  z-index: -1;
+}
+
+.btn-jumbo {
+  margin-left: 0px;
+}
+
+.jumbotron {
+  z-index: 1;
+}
+
+.home-card {
+  display: block;
+  position: relative;
+  justify-content: center !important;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(221, 221, 233, 0.65);
+  border-radius: 20px;
+}
+
+.carousel {
+  background: #fafafb;
+}
+
+.card-style {
+  justify-content: center !important;
+}
+
+@media (max-width: 768px) {
+  .image-client {
+    flex-direction: column;
+  }
+
+  .social {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar {
+    padding: 16px 0px;
+  }
+
+  .navbar .btn {
+    display: none;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .jumboimage {
+    display: none;
+  }
+
+  .carousel {
+    display: none;
+  }
+}

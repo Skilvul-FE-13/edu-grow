@@ -1,0 +1,13 @@
+.lh-base {
+  font-size: 16px;
+  margin: auto;
+  text-align: justify;
+}
+
+@media (min-width: 1200px) {
+  .lh-base {
+    font-size: 16px;
+    margin: 0px 360px 0px 360px;
+    text-align: justify;
+  }
+}
