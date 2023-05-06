@@ -44,4 +44,8 @@ font-size: 14px;
     grid-template-columns: auto;
     gap: 30px;
   }
+
+  .benefit{
+    flex-direction: column;
+  }
 }
